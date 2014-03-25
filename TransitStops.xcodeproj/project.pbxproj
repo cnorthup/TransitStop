@@ -21,6 +21,8 @@
 		5666B6C518E2024A0018DDEA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5666B6A718E2024A0018DDEA /* UIKit.framework */; };
 		5666B6CD18E2024A0018DDEA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5666B6CB18E2024A0018DDEA /* InfoPlist.strings */; };
 		5666B6CF18E2024A0018DDEA /* TransitStopsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5666B6CE18E2024A0018DDEA /* TransitStopsTests.m */; };
+		5666B6D918E2049D0018DDEA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5666B6D818E2049D0018DDEA /* MapKit.framework */; };
+		5666B6DC18E21CB00018DDEA /* StopDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5666B6DB18E21CB00018DDEA /* StopDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		5666B6CA18E2024A0018DDEA /* TransitStopsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TransitStopsTests-Info.plist"; sourceTree = "<group>"; };
 		5666B6CC18E2024A0018DDEA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5666B6CE18E2024A0018DDEA /* TransitStopsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitStopsTests.m; sourceTree = "<group>"; };
+		5666B6D818E2049D0018DDEA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		5666B6DA18E21CB00018DDEA /* StopDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StopDetailViewController.h; sourceTree = "<group>"; };
+		5666B6DB18E21CB00018DDEA /* StopDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5666B6D918E2049D0018DDEA /* MapKit.framework in Frameworks */,
 				5666B6A618E2024A0018DDEA /* CoreGraphics.framework in Frameworks */,
 				5666B6A818E2024A0018DDEA /* UIKit.framework in Frameworks */,
 				5666B6A418E2024A0018DDEA /* Foundation.framework in Frameworks */,
@@ -101,6 +107,7 @@
 		5666B6A218E2024A0018DDEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5666B6D818E2049D0018DDEA /* MapKit.framework */,
 				5666B6A318E2024A0018DDEA /* Foundation.framework */,
 				5666B6A518E2024A0018DDEA /* CoreGraphics.framework */,
 				5666B6A718E2024A0018DDEA /* UIKit.framework */,
@@ -115,6 +122,8 @@
 				5666B6B218E2024A0018DDEA /* AppDelegate.h */,
 				5666B6B318E2024A0018DDEA /* AppDelegate.m */,
 				5666B6B518E2024A0018DDEA /* Main.storyboard */,
+				5666B6DA18E21CB00018DDEA /* StopDetailViewController.h */,
+				5666B6DB18E21CB00018DDEA /* StopDetailViewController.m */,
 				5666B6B818E2024A0018DDEA /* ViewController.h */,
 				5666B6B918E2024A0018DDEA /* ViewController.m */,
 				5666B6BB18E2024A0018DDEA /* Images.xcassets */,
@@ -250,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5666B6BA18E2024A0018DDEA /* ViewController.m in Sources */,
+				5666B6DC18E21CB00018DDEA /* StopDetailViewController.m in Sources */,
 				5666B6B418E2024A0018DDEA /* AppDelegate.m in Sources */,
 				5666B6B018E2024A0018DDEA /* main.m in Sources */,
 			);
