@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5666B6A418E2024A0018DDEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5666B6A318E2024A0018DDEA /* Foundation.framework */; };
+		5666B6A618E2024A0018DDEA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5666B6A518E2024A0018DDEA /* CoreGraphics.framework */; };
+		5666B6A818E2024A0018DDEA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5666B6A718E2024A0018DDEA /* UIKit.framework */; };
+		5666B6AE18E2024A0018DDEA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5666B6AC18E2024A0018DDEA /* InfoPlist.strings */; };
+		5666B6B018E2024A0018DDEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5666B6AF18E2024A0018DDEA /* main.m */; };
+		5666B6B418E2024A0018DDEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5666B6B318E2024A0018DDEA /* AppDelegate.m */; };
+		5666B6B718E2024A0018DDEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5666B6B518E2024A0018DDEA /* Main.storyboard */; };
+		5666B6BA18E2024A0018DDEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5666B6B918E2024A0018DDEA /* ViewController.m */; };
+		5666B6BC18E2024A0018DDEA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5666B6BB18E2024A0018DDEA /* Images.xcassets */; };
+		5666B6C318E2024A0018DDEA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5666B6C218E2024A0018DDEA /* XCTest.framework */; };
+		5666B6C418E2024A0018DDEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5666B6A318E2024A0018DDEA /* Foundation.framework */; };
+		5666B6C518E2024A0018DDEA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5666B6A718E2024A0018DDEA /* UIKit.framework */; };
+		5666B6CD18E2024A0018DDEA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5666B6CB18E2024A0018DDEA /* InfoPlist.strings */; };
+		5666B6CF18E2024A0018DDEA /* TransitStopsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5666B6CE18E2024A0018DDEA /* TransitStopsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5666B6C618E2024A0018DDEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5666B69818E2024A0018DDEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5666B69F18E2024A0018DDEA;
+			remoteInfo = TransitStops;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5666B6A018E2024A0018DDEA /* TransitStops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransitStops.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5666B6A318E2024A0018DDEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5666B6A518E2024A0018DDEA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5666B6A718E2024A0018DDEA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5666B6AB18E2024A0018DDEA /* TransitStops-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TransitStops-Info.plist"; sourceTree = "<group>"; };
+		5666B6AD18E2024A0018DDEA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5666B6AF18E2024A0018DDEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5666B6B118E2024A0018DDEA /* TransitStops-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TransitStops-Prefix.pch"; sourceTree = "<group>"; };
+		5666B6B218E2024A0018DDEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5666B6B318E2024A0018DDEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5666B6B618E2024A0018DDEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5666B6B818E2024A0018DDEA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5666B6B918E2024A0018DDEA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5666B6BB18E2024A0018DDEA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5666B6C118E2024A0018DDEA /* TransitStopsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransitStopsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5666B6C218E2024A0018DDEA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5666B6CA18E2024A0018DDEA /* TransitStopsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TransitStopsTests-Info.plist"; sourceTree = "<group>"; };
+		5666B6CC18E2024A0018DDEA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5666B6CE18E2024A0018DDEA /* TransitStopsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitStopsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5666B69D18E2024A0018DDEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5666B6A618E2024A0018DDEA /* CoreGraphics.framework in Frameworks */,
+				5666B6A818E2024A0018DDEA /* UIKit.framework in Frameworks */,
+				5666B6A418E2024A0018DDEA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5666B6BE18E2024A0018DDEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5666B6C318E2024A0018DDEA /* XCTest.framework in Frameworks */,
+				5666B6C518E2024A0018DDEA /* UIKit.framework in Frameworks */,
+				5666B6C418E2024A0018DDEA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5666B69718E2024A0018DDEA = {
+			isa = PBXGroup;
+			children = (
+				5666B6A918E2024A0018DDEA /* TransitStops */,
+				5666B6C818E2024A0018DDEA /* TransitStopsTests */,
+				5666B6A218E2024A0018DDEA /* Frameworks */,
+				5666B6A118E2024A0018DDEA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5666B6A118E2024A0018DDEA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5666B6A018E2024A0018DDEA /* TransitStops.app */,
+				5666B6C118E2024A0018DDEA /* TransitStopsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5666B6A218E2024A0018DDEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5666B6A318E2024A0018DDEA /* Foundation.framework */,
+				5666B6A518E2024A0018DDEA /* CoreGraphics.framework */,
+				5666B6A718E2024A0018DDEA /* UIKit.framework */,
+				5666B6C218E2024A0018DDEA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5666B6A918E2024A0018DDEA /* TransitStops */ = {
+			isa = PBXGroup;
+			children = (
+				5666B6B218E2024A0018DDEA /* AppDelegate.h */,
+				5666B6B318E2024A0018DDEA /* AppDelegate.m */,
+				5666B6B518E2024A0018DDEA /* Main.storyboard */,
+				5666B6B818E2024A0018DDEA /* ViewController.h */,
+				5666B6B918E2024A0018DDEA /* ViewController.m */,
+				5666B6BB18E2024A0018DDEA /* Images.xcassets */,
+				5666B6AA18E2024A0018DDEA /* Supporting Files */,
+			);
+			path = TransitStops;
+			sourceTree = "<group>";
+		};
+		5666B6AA18E2024A0018DDEA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5666B6AB18E2024A0018DDEA /* TransitStops-Info.plist */,
+				5666B6AC18E2024A0018DDEA /* InfoPlist.strings */,
+				5666B6AF18E2024A0018DDEA /* main.m */,
+				5666B6B118E2024A0018DDEA /* TransitStops-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5666B6C818E2024A0018DDEA /* TransitStopsTests */ = {
+			isa = PBXGroup;
+			children = (
+				5666B6CE18E2024A0018DDEA /* TransitStopsTests.m */,
+				5666B6C918E2024A0018DDEA /* Supporting Files */,
+			);
+			path = TransitStopsTests;
+			sourceTree = "<group>";
+		};
+		5666B6C918E2024A0018DDEA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5666B6CA18E2024A0018DDEA /* TransitStopsTests-Info.plist */,
+				5666B6CB18E2024A0018DDEA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5666B69F18E2024A0018DDEA /* TransitStops */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5666B6D218E2024A0018DDEA /* Build configuration list for PBXNativeTarget "TransitStops" */;
+			buildPhases = (
+				5666B69C18E2024A0018DDEA /* Sources */,
+				5666B69D18E2024A0018DDEA /* Frameworks */,
+				5666B69E18E2024A0018DDEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TransitStops;
+			productName = TransitStops;
+			productReference = 5666B6A018E2024A0018DDEA /* TransitStops.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5666B6C018E2024A0018DDEA /* TransitStopsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5666B6D518E2024A0018DDEA /* Build configuration list for PBXNativeTarget "TransitStopsTests" */;
+			buildPhases = (
+				5666B6BD18E2024A0018DDEA /* Sources */,
+				5666B6BE18E2024A0018DDEA /* Frameworks */,
+				5666B6BF18E2024A0018DDEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5666B6C718E2024A0018DDEA /* PBXTargetDependency */,
+			);
+			name = TransitStopsTests;
+			productName = TransitStopsTests;
+			productReference = 5666B6C118E2024A0018DDEA /* TransitStopsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5666B69818E2024A0018DDEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = MobileMakers;
+				TargetAttributes = {
+					5666B6C018E2024A0018DDEA = {
+						TestTargetID = 5666B69F18E2024A0018DDEA;
+					};
+				};
+			};
+			buildConfigurationList = 5666B69B18E2024A0018DDEA /* Build configuration list for PBXProject "TransitStops" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5666B69718E2024A0018DDEA;
+			productRefGroup = 5666B6A118E2024A0018DDEA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5666B69F18E2024A0018DDEA /* TransitStops */,
+				5666B6C018E2024A0018DDEA /* TransitStopsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5666B69E18E2024A0018DDEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5666B6BC18E2024A0018DDEA /* Images.xcassets in Resources */,
+				5666B6AE18E2024A0018DDEA /* InfoPlist.strings in Resources */,
+				5666B6B718E2024A0018DDEA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5666B6BF18E2024A0018DDEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5666B6CD18E2024A0018DDEA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5666B69C18E2024A0018DDEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5666B6BA18E2024A0018DDEA /* ViewController.m in Sources */,
+				5666B6B418E2024A0018DDEA /* AppDelegate.m in Sources */,
+				5666B6B018E2024A0018DDEA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5666B6BD18E2024A0018DDEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5666B6CF18E2024A0018DDEA /* TransitStopsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5666B6C718E2024A0018DDEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5666B69F18E2024A0018DDEA /* TransitStops */;
+			targetProxy = 5666B6C618E2024A0018DDEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5666B6AC18E2024A0018DDEA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5666B6AD18E2024A0018DDEA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5666B6B518E2024A0018DDEA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5666B6B618E2024A0018DDEA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5666B6CB18E2024A0018DDEA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5666B6CC18E2024A0018DDEA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5666B6D018E2024A0018DDEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5666B6D118E2024A0018DDEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5666B6D318E2024A0018DDEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TransitStops/TransitStops-Prefix.pch";
+				INFOPLIST_FILE = "TransitStops/TransitStops-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5666B6D418E2024A0018DDEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TransitStops/TransitStops-Prefix.pch";
+				INFOPLIST_FILE = "TransitStops/TransitStops-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5666B6D618E2024A0018DDEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TransitStops.app/TransitStops";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TransitStops/TransitStops-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TransitStopsTests/TransitStopsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5666B6D718E2024A0018DDEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TransitStops.app/TransitStops";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TransitStops/TransitStops-Prefix.pch";
+				INFOPLIST_FILE = "TransitStopsTests/TransitStopsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5666B69B18E2024A0018DDEA /* Build configuration list for PBXProject "TransitStops" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5666B6D018E2024A0018DDEA /* Debug */,
+				5666B6D118E2024A0018DDEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5666B6D218E2024A0018DDEA /* Build configuration list for PBXNativeTarget "TransitStops" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5666B6D318E2024A0018DDEA /* Debug */,
+				5666B6D418E2024A0018DDEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5666B6D518E2024A0018DDEA /* Build configuration list for PBXNativeTarget "TransitStopsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5666B6D618E2024A0018DDEA /* Debug */,
+				5666B6D718E2024A0018DDEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5666B69818E2024A0018DDEA /* Project object */;
+}
