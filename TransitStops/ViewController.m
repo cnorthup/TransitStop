@@ -16,6 +16,9 @@
     NSMutableDictionary* stopsDictionary;
     IBOutlet MKMapView *myMapView;
     IBOutlet UIButton* infoButton;
+    CLLocationCoordinate2D centerOfStops;
+    MKCoordinateSpan trainSpan;
+    MKCoordinateRegion trainRegion;
 }
 @end
 
@@ -38,28 +41,26 @@
         stopsDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
         arrayOfStopInfo = stopsDictionary[@"row"];
         [self stopsOnMap];
-//        NSLog(@"%lu", (unsigned long)stopsDictionary.count);
-//        
-//        
-//        NSLog(@"%lu", (unsigned long)arrayOfStopInfo.count);
-//        NSDictionary *firstStopTest = [arrayOfStopInfo objectAtIndex:0];
-//        double lat = [firstStopTest[@"latitude"] doubleValue];
-//        CLLocationDegrees* latitude = &lat;
-//        double lonG = [firstStopTest[@"longitude"] doubleValue];
-//        CLLocationDegrees* longitude = &lonG;
-//        CLLocationCoordinate2D jackAndFin = CLLocationCoordinate2DMake(*latitude, *longitude);
-//        MKPointAnnotation *testStop = [MKPointAnnotation new];
-//        testStop.coordinate = jackAndFin;
-//        [myMapView addAnnotation:testStop];
+        myMapView.region = trainRegion;
     }];
 }
 
 -(void)stopsOnMap{
+    double easternBorder = 0.0;
+    double westernBorder = 0.0;
+    double northernBorder = 0.0;
+    double southernBorder = 100.0;
+    double averageLat = 0.0;
+    double averageLong = 0.0;
+    
     for (int i = 0; i <arrayOfStopInfo.count; i++) {
         NSDictionary* stop = [arrayOfStopInfo objectAtIndex:i];
         double lat = [stop[@"latitude"] doubleValue];
         CLLocationDegrees* latitude = &lat;
         double lonG = [stop[@"longitude"] doubleValue];
+        if ([stop[@"stop_id"] isEqualToString:@"4975"]) {
+            lonG *= -1;
+        }
         CLLocationDegrees* longitude = &lonG;
         CLLocationCoordinate2D currentStop = CLLocationCoordinate2DMake(*latitude, *longitude);
 
@@ -67,9 +68,38 @@
         testStop.coordinate = currentStop;
         testStop.title = stop[@"cta_stop_name"];
         testStop.subtitle = [NSString stringWithFormat:@"Routes: %@",stop[@"routes"]];
+        
+        averageLat += lat;
+        averageLong += lonG;
+        if (northernBorder < lat) {
+            northernBorder = lat;
+        }
+        if (southernBorder > lat) {
+            southernBorder = lat;
+        }
+        if (easternBorder > lonG) {
+            easternBorder = lonG;
+        }
+        if (westernBorder < fabs(lonG)) {
+            westernBorder = lonG;
+        }
 
         [myMapView addAnnotation:testStop];
     }
+    NSLog(@"%f",westernBorder);
+    NSLog(@"%f",easternBorder);
+    NSLog(@"%f",northernBorder);
+    NSLog(@"%f",southernBorder);
+    averageLat /= arrayOfStopInfo.count;
+    averageLong /= arrayOfStopInfo.count;
+    NSLog(@"%f", averageLong);
+    NSLog(@"%f", averageLat);
+    centerOfStops = CLLocationCoordinate2DMake(averageLat, averageLong);
+    CLLocationDegrees eastWestSpan = fabs(easternBorder - westernBorder)+.006;
+    CLLocationDegrees northSouthSpan = (northernBorder - southernBorder)+.006;
+    trainSpan = MKCoordinateSpanMake(northSouthSpan, eastWestSpan);
+    trainRegion = MKCoordinateRegionMake(centerOfStops, trainSpan);
+    
 }
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation{
